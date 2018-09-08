@@ -33,6 +33,11 @@
 		<div id="e" class="note-box"></div>
 		<div id="f" class="note-box"></div>
 	</div>
+	<div id="mode-select">
+		<label for="mode"><b>Select mode:</b></label>
+		<input type="range" id="mode" min="0" value="0" max="1" step="1" oninput="changeMode(this.value)">
+		<input type="text" id="mode-view" value="Echo" disabled></input>
+	</div>
 	<script src="/js/simon.js"></script>
 </body>
 </html>
